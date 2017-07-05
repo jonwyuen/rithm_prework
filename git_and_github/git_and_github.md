@@ -111,7 +111,7 @@ Done on GitHub
 
 Part II
 
-1) find clues: 
+1.find clues: 
 
 	grep "CLUE" crimescene
 
@@ -119,38 +119,38 @@ Part II
 	Clue 2: wallet belong to suspect; membership cards for AAA, Delta SkyMiles, the local library, and the Museum of Bash History
 	Clue 3: witness is a woman named Annabel with blond spiky hair and New Zealand accent
 
-2) find witness: 
+2.find witness: 
 
 	grep "Annabel" people
 
 	Annabel Sun	F	26	Hart Place, line 40
 	Annabel Church	F	38	Buckingham Place, line 179
 
-3) start with Annabel Sun: 
+3.start with Annabel Sun: 
 
 	head -n 40 streets/Hart_Place | tail -n 1
 
 	SEE INTERVIEW #47246024
 
-4) read the interview: 
+4.read the interview: 
 
 	cat interviews/interview-47246024
 	
 	Ms. Sun has brown hair and is not from New Zealand.  Not the witness from the cafe.
 
-5) try Annabel Church: 
+5.try Annabel Church: 
 
 	head -n 179 streets/Buckingham_Place | tail -n 1
 
 	SEE INTERVIEW #699607
 
-6) read the interview: 
+6.read the interview: 
 
 	cat interviews/interview-699607
 
 	She reports seeing the car that fled the scene.  Describes it as a blue Honda, with a license plate that starts with "L337" and ends with "9"
 
-7) find info about the car: 
+7.find info about the car: 
 
 	grep L337 vehicles -A 3 | grep Blue -C 1 | grep Honda -A 2
 
@@ -180,7 +180,7 @@ Part II
 
 	Since suspect is male, use grep "name" people, and find the male suspects. 3 suspects left: Aron Pilhofer, Joe Germuska, and Jeremy Bowers
 
-8) find info on Aron Pilhofer: 
+8.find info on Aron Pilhofer: 
 	
 	grep "Aron Pilhofer" people
 
@@ -194,7 +194,7 @@ Part II
 
 	Too short to match the camera footage.  Pilhofer is not considered a suspect.
 
-9) find info on Joe Germuska: 
+9.find info on Joe Germuska: 
 
 	grep "Joe Germuska" people
 
@@ -208,7 +208,7 @@ Part II
 
 	Should not be considered a suspect, has no SkyMiles membership and has never been a member of the Museum of Bash History.
 
-10) find info on Jeremy Bowers: 
+10.find info on Jeremy Bowers: 
 
 	grep "Jeremy Bowers" people
 
@@ -224,7 +224,7 @@ Part II
 	After questioning neighbors, appears that the occupant may have left for a trip recently.
 	Considered a suspect until proven otherwise, but would have to eliminate other suspects to confirm.
 
-11) check if Jeremy Bowers is suspect:
+11.check if Jeremy Bowers is suspect:
 
 	echo "Jeremy Bowers" | $(command -v md5 || command -v md5sum) | grep -qif /dev/stdin encoded && echo CORRECT\! GREAT WORK, GUMSHOE. || echo SORRY, TRY AGAIN.
 
