@@ -1,0 +1,19 @@
+body {
+	background-color: #5CCDFD;
+	font-family: arial;
+	font-size: 14px;
+	width: 700px;
+}
+
+h1 {
+	font-family: times;
+}
+
+ul {
+	text-align: center;
+	list-style: none;
+}
+
+li::first-letter {
+	font-size: 150%;
+}

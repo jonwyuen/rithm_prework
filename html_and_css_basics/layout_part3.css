@@ -1,0 +1,35 @@
+body {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.col {
+	height: 450px;
+	margin: 10px 8px 30px 8px;
+	width: 31%;
+	display: inline-block;
+}
+
+.purple, .red, .green, .orange {
+	border: 3px solid black;
+}
+
+.purple {
+	height: 150px;
+	width: 97%;
+	background-color: purple;
+	margin: 15px 15px;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: lightgreen;
+}
+
+.orange {
+	background-color: orange;
+}

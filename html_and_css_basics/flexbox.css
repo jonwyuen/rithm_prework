@@ -1,0 +1,44 @@
+body {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div {
+	border: 3px solid black;
+}
+
+img {
+	height: inherit;
+	width: 100%;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.col {
+	height: 300px;
+	width: 30.3%;
+	margin-top: 20px;
+}
+
+.green {
+	background-color: green;
+	width: 97%;
+	height: 150px;
+	margin-top: 60px;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: lightblue;
+}

@@ -1,0 +1,88 @@
+body {
+	margin: 0 auto;
+	font-family: verdana;
+	width: 85%;
+}
+
+header {
+	background-color: #FF6600;
+	margin-top: 10px;
+	height: 25px;
+	font-size: 14px;
+}
+
+header span{
+	float:left;
+	padding: 4px;
+	position: relative;
+	right: 8px;
+}
+
+.logo {
+	position: relative;
+	bottom: 40px;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.small a:hover {
+	text-decoration: underline;
+}
+
+img {
+	height: 31px;
+	width: 31px;
+	position: relative;
+	bottom: 7px;
+}
+
+#login {
+	float: right;
+}
+
+section {
+	padding: 1px;
+	background-color: #F6F6EF;
+}
+
+.info {
+	color: gray;
+}
+
+.small {
+	font-size: 11px;
+	color: gray;
+	margin: 1px;
+}
+
+#more {
+	font-size: 14px;
+	margin: 40px;
+}
+
+ol li {
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+
+nav {
+	text-align: center;
+	font-size: 11px;
+	color: gray;
+	padding: 5px;
+}
+
+#search-bar {
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 20px;
+	color: gray;
+	font-size: 13px;
+}
+
+hr {
+	border-color: #FF6600;
+}

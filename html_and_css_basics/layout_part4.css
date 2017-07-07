@@ -1,0 +1,51 @@
+body {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+div {
+	border: 3px solid black;
+}
+
+img {
+	height: inherit;
+	width: 100%;
+}
+
+.container {
+	margin: 15px 10px 15px 10px;
+}
+
+.col {
+	height: 300px;
+	width: 30%;
+	margin-top: 10px;
+	margin-left: 2.2%;
+	display: inline-block;
+}
+
+.green {
+	background-color: green;
+	width: 96%;
+	height: 150px;
+	margin-top: 50px;
+	margin-left: 1.8%;
+}
+
+.orange {
+	background-color: orange;
+	margin-left: 0;
+}
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: lightblue;
+}
+
+#left-img {
+	margin-left: 0;
+}
