@@ -1,0 +1,52 @@
+#clock {
+	height: 400px;
+	width: 400px;
+	background-color: lightgrey;
+	border: 5px solid black;
+	border-radius: 100%;
+}
+
+#hours, #minutes, #seconds {
+	position: absolute;
+	left: 208px;
+	transform-origin: center bottom;
+}
+
+#hours {
+	width: 7px;
+	height: 100px;
+	background-color: black;
+	top: 110px;
+	z-index: 3;
+	animation: rotate 43200s infinite linear;
+}
+
+
+#minutes {
+	width: 5px;
+	height: 140px;
+	background-color: grey;
+	top: 70px;
+	z-index: 2;
+	animation: rotate 3600s infinite linear;
+}
+
+
+#seconds {
+	width: 3px;
+	height: 180px;
+	background-color: red;
+	top: 30px;
+	z-index: 1;
+	animation: rotate 60s infinite linear;
+}
+
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

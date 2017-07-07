@@ -1,0 +1,40 @@
+/*.col-4 - consumes 33% of the width when the screen size is greater than 960 pixels, 50% of the width when the screen size is greater than 765 pixels and 100% of the width when the screen size is less than 765 pixels.
+
+.col-6 - consumes 50% of the width when the screen size is greater than 960 pixels and 100% of the width when the screen size is less than 960 pixels
+
+.col-12 - consumes 100% of the width when the screen size at all sizes.*/
+
+div {
+    height: 300px;
+}
+
+.col-4 {
+	width: 33%;
+    background-color: blue;
+}
+
+.col-6 {
+	width: 50%;
+    background-color: red;
+}
+
+.col-12 {
+	width: 100%;
+    background-color: purple;
+}
+
+@media (max-width: 960px) {
+    .col-4 {
+        width: 50%;
+    }
+
+    .col-6 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 765px) {
+    .col-4 {
+        width: 100%;
+    }
+}
