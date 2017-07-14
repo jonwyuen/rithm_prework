@@ -1,4 +1,4 @@
-###Part I
+### Part I
 
 1. The keyword throw allows you to return an error/exception of your choice.
 
@@ -60,7 +60,7 @@ thing;
 	
 The type of error is ReferenceError because we are trying to access a variable outside of the scope of the function data. The variable "thing" is only available in the scope of the function data.
 
-###Part II
+### Part II
 
 1.
 
