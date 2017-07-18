@@ -1,0 +1,40 @@
+th span {
+	vertical-align: middle;
+}
+
+.container {
+	margin-top: 30px;
+}
+
+.table {
+	font-size: 15px;
+}
+
+.glyphicon {
+	display: block;
+	height: 10px;
+}
+
+.glyphicon:hover {
+	color: lightgrey;
+}
+
+.arrows {
+	display: inline-block;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+#show {
+	width: 400px;
+}
+
+#rating {
+	width: 100px;
+}
+
+#addShow {
+	width: 100px;
+}
+
+
